@@ -1,0 +1,32 @@
+// & stands for the parent selector. 
+// In SASS, unlike CSS media query can be INSIDE the confines of the  selector itself  
+// Using min-width mediq queries enable the mobile-first approach to responsive design. 
+
+.grid {
+    display: grid;
+    gap: 4rem ; 
+    grid-template-rows: auto auto; // 2rows with auto size
+    grid-template-columns: 1fr;
+
+    @media (min-width: 900px) { // for larger viewports
+        grid-template-columns: 2fr 1fr ;
+        grid-template-rows: 1fr ;
+    }
+
+    &__main, &__sidebar { 
+        padding: 2rem ;
+        font-size: 2rem;
+        border-radius: 5px ;
+        text-align: center;
+    }
+
+    &__main { 
+        background-color: darkblue ; 
+    }
+
+    &__sidebar { 
+        background-color: tomato ; 
+    }
+
+}
+

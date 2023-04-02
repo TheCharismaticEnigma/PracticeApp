@@ -1,0 +1,7 @@
+// Entry point of each folder. SCSS compiler will look into this file first.
+// Each folder with partials should have an _index.scss partial which loads other partials. 
+// Using @forward we load the partials 
+
+@forward 'boilerplate' ;
+@forward 'typography' ; 
+@forward 'colors' ; 

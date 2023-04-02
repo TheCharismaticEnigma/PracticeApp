@@ -1,0 +1,12 @@
+// Essentially the color palette of the website. 
+// Contains all information regarding the colors used in the website. 
+// When declaring and initializing custom properties, do it on :root selector as it takes precedence over every other selector. 
+// Css custom properties/variables can be updated dynamically using JS. Same ain't for SASS variables. 
+// CSS variables >> SASS variables. 
+// Using other partials as modules => @use './...' as nameSpace ;
+
+:root { 
+    --background-color: #29292f; 
+    --text-color: #e6e6e6 ; 
+}
+

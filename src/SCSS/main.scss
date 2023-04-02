@@ -1,8 +1,6 @@
+// Load all the folders using @forward. 
+// Path to index.scss or just the folder name will do. 
 
-body { 
-    min-height: 100vh ; 
-    width: 100% ;
-    background: wheat ; 
-    color: black ; 
-    overflow-x: hidden ; 
-}
+@forward './globals/index' ; 
+@forward './layout/index' ; 
+@forward './utils/index' ; 
