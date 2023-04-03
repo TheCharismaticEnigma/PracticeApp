@@ -12,15 +12,31 @@
 
 <body>
     <div class="grid container">
-        <main class="grid__main">
-            <h1>Thank You Everybody! Thank You!</h1>
-            <p>Gracias a Todos. Viva Mexico Cabrones. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero fugit omnis itaque asperiores sequi minima cumque et officia fugiat quasi.</p>
-        </main>
+        <div class="grid__main">
+            <h2 class="grid__heading">Search Players!</h2>
+            
+            <form class="form form-container" autocomplete="off">
 
-        <aside class="grid__sidebar">
-            <h2>Bismillah hir rehman nir raheem.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repudiandae sit magni numquam ducimus ratione, dicta assumenda esse beatae saepe!</p>
-        </aside>
+                <div class="form__group">
+                    <label class="form__label" for="playerName">Player Name</label>
+                    <input class="form__input" type="text" placeholder="Michael..." id="playerName" name="playerName" spellcheck="false">
+                </div>
+                
+                <div class="form__group">
+                    <label class="form__label" for="teamName">Team Name</label>
+                    <input class="form__input" type="text" placeholder="Rockets..." id="teamName" name="teamName" spellcheck="false">
+                </div>
+
+                <button class="form__btn" type="submit">Search</button>
+
+            </form>
+        </div>
+
+        <div class="grid__sidebar">            
+            <h2 class="grid__heading">The Result</h2>
+
+            <div id="resultContainer" class="result result-container"></div>
+        </div>
     </div>
 </body>
 </html>

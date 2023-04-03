@@ -1,2 +1,17 @@
-// Mixins for handling media-queries. 
+// Mixins for handling breakpoints and media queries 
 
+// SASS MAPS: 
+
+$breakpoints-up: (
+    "medium": 70rem , 
+    "large" : 90rem ,
+    "x-large" : 144rem, 
+); 
+
+// map-get(sassMapName,stringKey) 
+
+@mixin breakpoint {
+    @media (min-width: map-get()) { 
+
+    }
+}

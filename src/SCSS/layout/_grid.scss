@@ -18,14 +18,24 @@
         font-size: 2rem;
         border-radius: 5px ;
         text-align: center;
+        color: black ; 
+        border: 1px solid lightblue ; 
+        display: flex ; 
+        flex-direction: column ;
+        gap: 3rem ; 
     }
 
     &__main { 
-        background-color: darkblue ; 
+        background-color: rgb(201, 175, 170) ;  
     }
 
     &__sidebar { 
-        background-color: tomato ; 
+        background-color: rgb(83, 74, 72) ; 
+    }
+
+    &__heading { 
+        font-family: cursive ;
+        font-weight: 500;
     }
 
 }

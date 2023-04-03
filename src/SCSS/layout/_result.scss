@@ -1,0 +1,17 @@
+//  Contains the styles for the result container 
+
+#resultContainer { 
+    margin: auto 0 ; 
+
+    & p { 
+        border-radius: 5px ;
+        box-shadow: 0 0 2px 0 lightblue inset ;
+        font-size: 2.5rem ; 
+        line-height: 1.5 ;
+        margin: 0 auto ; 
+        padding: 1rem ; 
+        text-align: center ;
+        text-transform: capitalize;
+        width: 95% ; 
+    }
+}
